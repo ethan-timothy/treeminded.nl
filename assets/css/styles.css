@@ -13,10 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-image: url("assets/images/realbg.jpg");
-}
-
 h1, h2, h3 {
     font-weight: 700;
     line-height: 1.2;
