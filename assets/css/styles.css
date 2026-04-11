@@ -1,0 +1,232 @@
+/* Main Settings */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e3edde;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("assets/images/realbg.jpg");
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 68px;
+    text-align: center;
+    color: #1A1A1A;
+}
+
+
+
+/* navigation bar */
+.nav-container nav {
+    display: flex;
+    background-color: #F4F6F3;
+    color: #1A1A1A;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav .logo {
+    margin-left: 50px;
+    color: #1A1A1A
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #1A1A1A;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: lightgreen;
+    border-bottom: 2px #1A1A1A solid;
+}
+
+nav .cta {
+    margin-right: 50px;
+    padding: 10px;
+    color: #1A1A1A;
+    border: rgb(154, 138, 37) 2px solid;
+    border-radius: 8px;
+    background-color: #C2A878;
+}
+
+nav .cta:hover {
+    color: #ffffff;
+    border-radius: 8px;
+    background-color: green;
+}
+
+/* Index html */
+/* hero-section */
+/* 1st section */
+.hero-container {
+  background-image: url("/assets/images/realbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+  margin-top: 100px;
+  align-content: center;
+}
+
+.hero-container h1 {
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #1A1A1A;
+}
+
+.hero-container p {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px #1A1A1A;
+}
+
+.cta-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero-container .cta {
+    margin-right: 50px;
+    padding: 10px;
+    color: #1A1A1A;
+    border: rgb(154, 138, 37) 2px solid;
+    border-radius: 8px;
+    background-color: #C2A878;
+}
+
+.hero-container .cta:hover {
+    color: #181616;
+    border-radius: 8px;
+    background-color: #6f5525;
+}
+
+.hero-container .cta-2 {
+    margin-right: 50px;
+    padding: 10px;
+    color: white;
+    border: rgb(154, 138, 37) 2px solid;
+    border-radius: 8px;
+    background-color: green;
+}
+
+.hero-container .cta-2:hover {
+    color: #2a2727;
+    border-radius: 8px;
+    background-color: forestgreen;
+}
+
+/* 2nd section (mission)*/
+.mission {
+    text-align: center;
+    margin: 80px;
+}
+
+.mission h2 {
+    font-size: 42px;
+    color: #2a2727;
+    margin-bottom: 30px;
+}
+
+.mission .learn-more, .mission a {
+    color: green;
+    margin-top: 30px;
+}
+
+.mission a:hover {
+    color: darkgreen;
+    text-shadow: 0px 2px 4px #1A1A1A;
+}
+/* End of Index html */
+
+/* footer */
+footer {
+    background-color: rgb(3, 97, 3);
+    color: white;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+footer a:hover {
+    border-bottom: white 2px solid;
+    border-radius: 5px;
+}
+
+.footer .upper-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+footer .upper-section .description {
+    width: 400px;
+}
+
+.contact-info .icons ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info .icons ul li a {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.footer .upper-section h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #1A1A1A;
+}
+
+.footer .upper-section p {
+    font-size: medium;
+}
+
+.footer .small-text {
+    text-align: center;
+    margin: 10px;
+}
+
+.footer .small-text p {
+    font-size: 14px;
+}
