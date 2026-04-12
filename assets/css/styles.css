@@ -170,6 +170,220 @@ nav .cta:hover {
 }
 /* End of Index html */
 
+/* Services html */
+/* section 1 */
+#services {
+    margin-bottom: 50px;
+    padding: 0 100px;
+    margin-top: 180px;
+}
+
+#services .text h2 {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    color: #1A1A1A;
+}
+
+#services .text p {
+    color: #2a2727;
+    margin-bottom: 20px;
+}
+
+#services li {
+    border: forestgreen solid 2px;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+#services li a {
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+.offers ul {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#services li a:hover {
+    color: #04618c;
+    font-style: italic;
+}
+
+
+/* more details about services offered */
+.more-details {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.more-details h3 {
+    font-weight: 550;
+    font-size: 36px;
+}
+
+.pruning-heading, .care-heading, .harvesting-heading {
+    text-align: center;
+}
+
+.planting, .pruning, .lectures, .care, .selection, .harvesting {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.more-details .planting, .more-details .pruning, .more-details .lectures, .more-details .care, .more-details .selection, .more-details .harvesting {
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    scroll-margin-top: 140px;
+}
+
+.more-details img {
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+    width: 200px;
+}
+/* End of services html */
+
+/* About html */
+.about .intro-text-container {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: green;
+    height: 300px;
+    align-content: center;
+    color: whitesmoke;
+}
+
+.about .intro-text-container h2 {
+    font-size: 42px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.story {
+    text-align: center;
+    margin: 80px;
+}
+
+.story h2 {
+    font-size: 42px;
+    color: #2a2727;
+    margin-bottom: 30px;
+}
+/* team section */
+.team-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    scroll-margin-top: 100px;
+}
+
+.team-section h2 {
+    font-size: 42px;
+    color: #2a2727;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.team-section .group .personal-details {
+    text-align: center;
+    flex: 2;
+}
+
+.team-section .group .text {
+    flex: 8;
+}
+
+.team-section .group .personal-details img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: solid 4px darkgreen;
+}
+
+.team-section .group .personal-details p {
+    font-weight: 600;
+}
+
+.team-section .group .personal-details p:last-child {
+    font-weight: normal;
+    font-style: italic;
+}
+/* End of About Section */
+
+/* Contact html */
+/* Contact section */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin: 50px;
+    font-size: 42px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 10px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input, .contact-section .group form textarea {
+    font-family: 'Inter', sans-serif;
+    border: 2px solid green;
+    background-color: #e0facf;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    color: rgb(26, 32, 26);
+    background-color: #68a371;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.contact-section .group form button:hover {
+    background-color: #012e14;
+    color: #87b88e;
+    font-size: 20px;
+}
+
 /* footer */
 footer {
     background-color: rgb(3, 97, 3);
