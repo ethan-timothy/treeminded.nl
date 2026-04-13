@@ -54,7 +54,9 @@ h1 {
 
 nav .logo {
     margin-left: 50px;
-    color: #1A1A1A
+    width: 70px;
+    border-radius: 50%;
+    border: 2px green solid;
 }
 
 nav ul {
@@ -175,7 +177,11 @@ nav .cta:hover {
 #services {
     margin-bottom: 50px;
     padding: 0 100px;
-    margin-top: 180px;
+    margin-top: 80px;
+    background-color: green;
+    color: white;
+    height: 450px;
+    align-content: center;
 }
 
 #services .text h2 {
@@ -183,18 +189,18 @@ nav .cta:hover {
     font-size: 50px;
     text-align: center;
     margin: 20px;
-    color: #1A1A1A;
+    text-shadow: #1A1A1A 2px 2px 2px;
 }
 
 #services .text p {
-    color: #2a2727;
     margin-bottom: 20px;
 }
 
 #services li {
-    border: forestgreen solid 2px;
+    border: rgb(255, 255, 255) solid 2px;
     border-radius: 8px;
     padding: 5px 10px;
+    background-color: #C2A878;
 }
 
 #services li a {
@@ -266,6 +272,7 @@ nav .cta:hover {
     font-size: 42px;
     color: whitesmoke;
     margin-bottom: 30px;
+    text-shadow: #1A1A1A 2px 2px 2px;
 }
 
 .story {
@@ -330,13 +337,17 @@ nav .cta:hover {
 .contact-section {
     padding: 0 50px;
     margin-bottom: 100px;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 .contact-section h2 {
     text-align: center;
-    margin: 50px;
     font-size: 42px;
+    height: 180px;
+    background-color: green;
+    color: white;
+    text-shadow: #181616 2px 2px 2px;
+    align-content: center;
 }
 
 .contact-section .group {
