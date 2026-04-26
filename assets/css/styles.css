@@ -96,7 +96,7 @@ nav .cta:hover {
 /* hero-section */
 /* 1st section */
 .hero-container {
-    background-image: url("../images/realbg.jpg");
+    background-image: url('../images/realbg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
