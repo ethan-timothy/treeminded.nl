@@ -13,7 +13,9 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -2px;
@@ -94,13 +96,13 @@ nav .cta:hover {
 /* hero-section */
 /* 1st section */
 .hero-container {
-  background-image: url("/assets/images/realbg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 90vh;
-  background-size: cover;
-  margin-top: 100px;
-  align-content: center;
+    background-image: url("/assets/images/realbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+    margin-top: 100px;
+    align-content: center;
 }
 
 .hero-container h1 {
@@ -161,7 +163,8 @@ nav .cta:hover {
     margin-bottom: 30px;
 }
 
-.mission .learn-more, .mission a {
+.mission .learn-more,
+.mission a {
     color: green;
     margin-top: 30px;
 }
@@ -170,6 +173,7 @@ nav .cta:hover {
     color: darkgreen;
     text-shadow: 0px 2px 4px #1A1A1A;
 }
+
 /* End of Index html */
 
 /* Services html */
@@ -232,16 +236,28 @@ nav .cta:hover {
     font-size: 36px;
 }
 
-.pruning-heading, .care-heading, .harvesting-heading {
+.pruning-heading,
+.care-heading,
+.harvesting-heading {
     text-align: center;
 }
 
-.planting, .pruning, .lectures, .care, .selection, .harvesting {
+.planting,
+.pruning,
+.lectures,
+.care,
+.selection,
+.harvesting {
     margin-bottom: 30px;
     padding: 5px;
 }
 
-.more-details .planting, .more-details .pruning, .more-details .lectures, .more-details .care, .more-details .selection, .more-details .harvesting {
+.more-details .planting,
+.more-details .pruning,
+.more-details .lectures,
+.more-details .care,
+.more-details .selection,
+.more-details .harvesting {
     display: flex;
     padding: 0 50px;
     align-items: center;
@@ -255,6 +271,7 @@ nav .cta:hover {
     aspect-ratio: 1/1;
     width: 200px;
 }
+
 /* End of services html */
 
 /* About html */
@@ -285,6 +302,7 @@ nav .cta:hover {
     color: #2a2727;
     margin-bottom: 30px;
 }
+
 /* team section */
 .team-section {
     padding: 0 50px;
@@ -330,6 +348,7 @@ nav .cta:hover {
     font-weight: normal;
     font-style: italic;
 }
+
 /* End of About Section */
 
 /* Contact html */
@@ -367,7 +386,8 @@ nav .cta:hover {
     flex-direction: column;
 }
 
-.contact-section .group form input, .contact-section .group form textarea {
+.contact-section .group form input,
+.contact-section .group form textarea {
     font-family: 'Inter', sans-serif;
     border: 2px solid green;
     background-color: #e0facf;
@@ -454,100 +474,127 @@ footer .upper-section .description {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-/* Navigation Bar */
-.nav-container, nav {
-    height: 80px;
-}
 
-nav .logo {
-    margin-left: 30px;
-    width: 60px;
-    border-radius: 50%;
-    border: 2px green solid;
-}
-    
+    /* Navigation Bar */
+    .nav-container,
+    nav {
+        height: 80px;
+    }
+
+    nav .logo {
+        margin-left: 30px;
+        width: 60px;
+        border-radius: 50%;
+        border: 2px green solid;
+    }
+
     nav ul {
-    display: flex;
-    align-items: center;
-}
+        display: flex;
+        align-items: center;
+    }
 
-nav ul li a {
-    padding: 3px;
-}
+    nav ul li a {
+        padding: 3px;
+    }
 
-/* Index html */
-.hero-container {
-  height: 90vh;
-  margin-top: 20px;
-}
+    /* Index html */
+    .hero-container {
+        height: 90vh;
+        margin-top: 20px;
+    }
 
-.hero-container h1 {
-    font-size: 44px;
-}
+    .hero-container h1 {
+        font-size: 44px;
+    }
 
-.hero-container p {
-    font-size: 20px;
-}
+    .hero-container p {
+        font-size: 20px;
+    }
 
-.mission h2 {
-    font-size: 24px;
-}
+    .mission h2 {
+        font-size: 24px;
+    }
 
-.mission p {
-    font-size: 20px;
-}
+    .mission p {
+        font-size: 20px;
+    }
 
-/* Footer */
-footer .upper-section .description {
-    width: 300px;
-}
+    /* Footer */
+    footer .upper-section .description {
+        width: 300px;
+    }
 
-.footer .upper-section p {
-    font-size: 15px;
-}
+    .footer .upper-section p {
+        font-size: 15px;
+    }
 
-.footer .links a {
-    font-size: 15px;
-}
+    .footer .links a {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 830px) {
-/* Navigation Bar */
-.nav-container, nav {
-    height: 80px;
+
+    /* Navigation Bar */
+    .nav-container,
+    nav {
+        height: 80px;
+    }
+
+    /* Index html */
+    .hero-container p {
+        font-size: 16px;
+    }
+
+    .mission h2 {
+        font-size: 24px;
+    }
+
+    .mission p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer .upper-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer .upper-section p {}
+
+    .footer .description {
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer h4 {
+        text-align: center;
+    }
 }
 
-/* Index html */
-.hero-container p {
-    font-size: 16px;
+@media (max-width: 600px) {
+    .nav-container .hide {
+        display: none;
+    }
+
+    .nav-container .logo {
+        margin-left: 20px;
+    }
+
+    .nav-container ul {
+        gap: 12px;
+        padding: 0;
+    }
+
+    nav .cta {
+    margin-right: 20px;
+    padding: 10px;
 }
 
-.mission h2 {
-    font-size: 24px;
-}
-
-.mission p {
-    font-size: 16px;
-}
-
-/* Footer */
-.footer .upper-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-}
-
-.footer .upper-section p {
-}
-
-.footer .description {
-    text-align: center;
-    align-items: center;
-}
-
-.footer h4 {
-    text-align: center;
-}
+    .mission {
+        margin: 20px;
+    }
 }
