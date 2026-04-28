@@ -11,6 +11,8 @@ html {
     font-family: 'Poppins', sans-serif;
     background-color: #e3edde;
     scroll-behavior: smooth;
+    max-width: 2000px; /* Prevents overstretching on big screens */
+    margin: 0 auto;    /* Centers the container horizontally */
 }
 
 h1,
