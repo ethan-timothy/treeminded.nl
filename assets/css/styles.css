@@ -268,24 +268,39 @@ blockquote {
 
 /* === Services Page === */
 #services {
+<<<<<<< HEAD
     padding: 0 100px;
     margin-top: 80px;
     margin-bottom: 50px;
     background-color: green;
+=======
+    margin-bottom: 50px;
+    margin-top: 80px;
+>>>>>>> 50c9e6a53952970915f6fdedaf116899dcc0da86
     color: white;
     height: 450px;
+}
+
+#services .text {
+    background-color: green;
     align-content: center;
 }
 
 #services .text h2 {
     font-size: 50px;
     text-align: center;
+<<<<<<< HEAD
     margin: 20px;
     text-shadow: 2px 2px 2px #1A1A1A;
+=======
+    text-shadow: #1A1A1A 2px 2px 2px;
+>>>>>>> 50c9e6a53952970915f6fdedaf116899dcc0da86
 }
 
 #services .text p {
-    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
 }
 
 #services li {
@@ -632,7 +647,15 @@ footer .small-text p {
         margin: 0;
     }
 
+<<<<<<< HEAD
     footer .description {
+=======
+    .footer .upper-section p {
+        color: white;
+    }
+
+    .footer .description {
+>>>>>>> 50c9e6a53952970915f6fdedaf116899dcc0da86
         text-align: center;
     }
 
