@@ -1,4 +1,4 @@
-/* Main Settings */
+/* === Reset === */
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +11,8 @@ html {
     font-family: 'Poppins', sans-serif;
     background-color: #e3edde;
     scroll-behavior: smooth;
-    max-width: 2000px; /* Prevents overstretching on big screens */
-    margin: 0 auto;    /* Centers the container horizontally */
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
 h1,
@@ -40,9 +40,7 @@ h1 {
     color: #1A1A1A;
 }
 
-
-
-/* navigation bar */
+/* === Navigation === */
 .nav-container nav {
     display: flex;
     background-color: #F4F6F3;
@@ -50,17 +48,19 @@ h1 {
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    align-content: center;
+    max-width: 1600px;
     position: fixed;
     width: 100%;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav .logo {
     margin-left: 50px;
     width: 70px;
     border-radius: 50%;
-    border: 2px green solid;
+    border: 2px solid green;
 }
 
 nav ul {
@@ -76,27 +76,53 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: lightgreen;
-    border-bottom: 2px #1A1A1A solid;
+    border-bottom: 2px solid #1A1A1A;
 }
 
-nav .cta {
-    margin-right: 50px;
+/* === Buttons === */
+.cta {
     padding: 10px;
     color: #1A1A1A;
-    border: rgb(154, 138, 37) 2px solid;
+    border: 2px solid rgb(154, 138, 37);
     border-radius: 8px;
     background-color: #C2A878;
 }
 
-nav .cta:hover {
-    color: #ffffff;
+.cta:hover {
+    color: #181616;
+    background-color: #6f5525;
+}
+
+.cta-2 {
+    padding: 10px;
+    color: white;
+    border: 2px solid rgb(154, 138, 37);
     border-radius: 8px;
     background-color: green;
 }
 
-/* Index html */
-/* hero-section */
-/* 1st section */
+.cta-2:hover {
+    color: #2a2727;
+    background-color: forestgreen;
+}
+
+nav .cta {
+    margin-right: 50px;
+}
+
+nav .cta:hover {
+    color: #ffffff;
+    background-color: green;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 50px;
+}
+
+/* === Hero === */
 .hero-container {
     background-image: url("../images/realbg.jpg");
     background-position: center;
@@ -118,72 +144,133 @@ nav .cta:hover {
     text-shadow: 2px 2px 4px #1A1A1A;
 }
 
-.cta-container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.hero-container .cta {
-    margin-right: 50px;
-    padding: 10px;
-    color: #1A1A1A;
-    border: rgb(154, 138, 37) 2px solid;
-    border-radius: 8px;
-    background-color: #C2A878;
-}
-
-.hero-container .cta:hover {
-    color: #181616;
-    border-radius: 8px;
-    background-color: #6f5525;
-}
-
-.hero-container .cta-2 {
-    margin-right: 50px;
-    padding: 10px;
-    color: white;
-    border: rgb(154, 138, 37) 2px solid;
-    border-radius: 8px;
-    background-color: green;
-}
-
-.hero-container .cta-2:hover {
-    color: #2a2727;
-    border-radius: 8px;
-    background-color: forestgreen;
-}
-
-/* 2nd section (mission)*/
-.mission {
+/* === Shared Section Styles === */
+.mission,
+.services-overview,
+.story {
     text-align: center;
     margin: 80px;
 }
 
-.mission h2 {
+.mission h2,
+.services-overview h2,
+.story h2,
+.team-section h2 {
     font-size: 42px;
     color: #2a2727;
     margin-bottom: 30px;
 }
 
-.mission .learn-more,
-.mission a {
-    color: green;
+.mission .cta-container {
     margin-top: 30px;
 }
 
-.mission a:hover {
-    color: darkgreen;
-    text-shadow: 0px 2px 4px #1A1A1A;
+.learn-more a {
+    color: green;
+    display: inline-block;
+    margin-top: 30px;
 }
 
-/* End of Index html */
+.learn-more a:hover {
+    color: darkgreen;
+    text-shadow: 0 2px 4px #1A1A1A;
+}
 
-/* Services html */
-/* section 1 */
+/* === Values === */
+.values-section {
+    padding: 60px 80px;
+    background-color: green;
+    color: white;
+}
+
+.values-section h2 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 2px #1A1A1A;
+}
+
+.values-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.value-card {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.value-card p {
+    font-size: 18px;
+}
+
+/* === Services List === */
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.services-list li {
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1A1A1A;
+    background-color: #f4f6f3;
+}
+
+.team-section .services-list li {
+    background-color: #e3edde;
+}
+
+/* === CTA Section === */
+.cta-section {
+    text-align: center;
+    padding: 60px 80px;
+    background-color: #f4f6f3;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    color: #2a2727;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 30px;
+}
+
+/* === Blockquote === */
+blockquote {
+    margin: 30px auto;
+    max-width: 700px;
+    padding: 20px 30px;
+    border-left: 4px solid green;
+    background-color: #f4f6f3;
+    border-radius: 0 8px 8px 0;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #2a2727;
+}
+
+/* === Services Page === */
 #services {
-    margin-bottom: 50px;
     padding: 0 100px;
     margin-top: 80px;
+    margin-bottom: 50px;
     background-color: green;
     color: white;
     height: 450px;
@@ -191,11 +278,10 @@ nav .cta:hover {
 }
 
 #services .text h2 {
-    font-weight: 700;
     font-size: 50px;
     text-align: center;
     margin: 20px;
-    text-shadow: #1A1A1A 2px 2px 2px;
+    text-shadow: 2px 2px 2px #1A1A1A;
 }
 
 #services .text p {
@@ -203,7 +289,7 @@ nav .cta:hover {
 }
 
 #services li {
-    border: rgb(255, 255, 255) solid 2px;
+    border: 2px solid white;
     border-radius: 8px;
     padding: 5px 10px;
     background-color: #C2A878;
@@ -217,7 +303,6 @@ nav .cta:hover {
 .offers ul {
     display: flex;
     text-align: center;
-    align-content: center;
     justify-content: space-between;
 }
 
@@ -226,15 +311,13 @@ nav .cta:hover {
     font-style: italic;
 }
 
-
-/* more details about services offered */
 .more-details {
     padding: 0 50px;
     margin-bottom: 100px;
 }
 
 .more-details h3 {
-    font-weight: 550;
+    font-weight: 600;
     font-size: 36px;
 }
 
@@ -274,9 +357,7 @@ nav .cta:hover {
     width: 200px;
 }
 
-/* End of services html */
-
-/* About html */
+/* === About Page === */
 .about .intro-text-container {
     text-align: center;
     margin-top: 80px;
@@ -291,32 +372,13 @@ nav .cta:hover {
     font-size: 42px;
     color: whitesmoke;
     margin-bottom: 30px;
-    text-shadow: #1A1A1A 2px 2px 2px;
+    text-shadow: 2px 2px 2px #1A1A1A;
 }
 
-.story {
-    text-align: center;
-    margin: 80px;
-}
-
-.story h2 {
-    font-size: 42px;
-    color: #2a2727;
-    margin-bottom: 30px;
-}
-
-/* team section */
 .team-section {
     padding: 0 50px;
     margin-bottom: 100px;
     scroll-margin-top: 100px;
-}
-
-.team-section h2 {
-    font-size: 42px;
-    color: #2a2727;
-    margin-bottom: 30px;
-    text-align: center;
 }
 
 .team-section .group {
@@ -335,11 +397,12 @@ nav .cta:hover {
 }
 
 .team-section .group .personal-details img {
+    width: 200px;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: solid 4px darkgreen;
+    border: 4px solid darkgreen;
 }
 
 .team-section .group .personal-details p {
@@ -347,18 +410,19 @@ nav .cta:hover {
 }
 
 .team-section .group .personal-details p:last-child {
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
 }
 
-/* End of About Section */
+.team-section .story {
+    margin: 0;
+}
 
-/* Contact html */
-/* Contact section */
+/* === Contact Page === */
 .contact-section {
     padding: 0 50px;
-    margin-bottom: 100px;
     margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .contact-section h2 {
@@ -367,7 +431,7 @@ nav .cta:hover {
     height: 180px;
     background-color: green;
     color: white;
-    text-shadow: #181616 2px 2px 2px;
+    text-shadow: 2px 2px 2px #181616;
     align-content: center;
 }
 
@@ -408,7 +472,7 @@ nav .cta:hover {
     height: 40px;
     border-radius: 8px;
     cursor: pointer;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .contact-section .group form button:hover {
@@ -417,11 +481,16 @@ nav .cta:hover {
     font-size: 20px;
 }
 
-/* footer */
+.bullet-list {
+    list-style: disc;
+    padding-left: 1.5em;
+    margin-top: 10px;
+}
+
+/* === Footer === */
 footer {
     background-color: rgb(3, 97, 3);
     color: white;
-    margin-bottom: 0;
 }
 
 footer a {
@@ -429,11 +498,11 @@ footer a {
 }
 
 footer a:hover {
-    border-bottom: white 2px solid;
+    border-bottom: 2px solid white;
     border-radius: 5px;
 }
 
-.footer .upper-section {
+footer .upper-section {
     display: flex;
     justify-content: space-between;
     margin: 50px;
@@ -441,6 +510,27 @@ footer a:hover {
 
 footer .upper-section .description {
     width: 400px;
+}
+
+footer .upper-section h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #1A1A1A;
+}
+
+footer .upper-section p {
+    font-size: 18px;
+}
+
+footer .small-text {
+    text-align: center;
+    margin: 10px;
+}
+
+footer .small-text p {
+    font-size: 14px;
 }
 
 .contact-info .icons ul {
@@ -453,53 +543,21 @@ footer .upper-section .description {
     margin-bottom: 20px;
 }
 
-.footer .upper-section h4 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px #1A1A1A;
-}
-
-.footer .upper-section p {
-    font-size: 18px;
-}
-
-.footer .small-text {
-    text-align: center;
-    margin: 10px;
-}
-
-.footer .small-text p {
-    font-size: 14px;
-}
-
-/* Responsive Design */
+/* === Responsive === */
 @media (max-width: 1200px) {
-
-    /* Navigation Bar */
-    .nav-container,
-    nav {
+    .nav-container nav {
         height: 80px;
     }
 
     nav .logo {
         margin-left: 30px;
         width: 60px;
-        border-radius: 50%;
-        border: 2px green solid;
-    }
-
-    nav ul {
-        display: flex;
-        align-items: center;
     }
 
     nav ul li a {
         padding: 3px;
     }
 
-    /* Index html */
     .hero-container {
         height: 90vh;
         margin-top: 20px;
@@ -521,29 +579,40 @@ footer .upper-section .description {
         font-size: 20px;
     }
 
-    /* Footer */
     footer .upper-section .description {
         width: 300px;
     }
 
-    .footer .upper-section p {
+    footer .upper-section p {
         font-size: 15px;
     }
 
-    .footer .links a {
+    footer .links a {
         font-size: 15px;
     }
 }
 
 @media (max-width: 830px) {
-
-    /* Navigation Bar */
-    .nav-container,
-    nav {
+    .nav-container nav {
         height: 80px;
     }
 
-    /* Index html */
+    .values-grid {
+        flex-direction: column;
+    }
+
+    .values-section {
+        padding: 40px 30px;
+    }
+
+    .services-overview {
+        margin: 40px 20px;
+    }
+
+    .cta-section {
+        padding: 40px 20px;
+    }
+
     .hero-container p {
         font-size: 16px;
     }
@@ -556,23 +625,18 @@ footer .upper-section .description {
         font-size: 16px;
     }
 
-    /* Footer */
-    .footer .upper-section {
-        display: flex;
+    footer .upper-section {
         flex-direction: column;
         align-items: center;
         width: 100%;
         margin: 0;
     }
 
-    .footer .upper-section p {}
-
-    .footer .description {
+    footer .description {
         text-align: center;
-        align-items: center;
     }
 
-    .footer h4 {
+    footer h4 {
         text-align: center;
     }
 }
@@ -592,9 +656,9 @@ footer .upper-section .description {
     }
 
     nav .cta {
-    margin-right: 20px;
-    padding: 10px;
-}
+        margin-right: 20px;
+        padding: 10px;
+    }
 
     .mission {
         margin: 20px;
