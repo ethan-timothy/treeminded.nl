@@ -182,11 +182,13 @@ nav .cta:hover {
 /* section 1 */
 #services {
     margin-bottom: 50px;
-    padding: 0 100px;
     margin-top: 80px;
-    background-color: green;
     color: white;
     height: 450px;
+}
+
+#services .text {
+    background-color: green;
     align-content: center;
 }
 
@@ -194,12 +196,13 @@ nav .cta:hover {
     font-weight: 700;
     font-size: 50px;
     text-align: center;
-    margin: 20px;
     text-shadow: #1A1A1A 2px 2px 2px;
 }
 
 #services .text p {
-    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
 }
 
 #services li {
@@ -565,7 +568,9 @@ footer .upper-section .description {
         margin: 0;
     }
 
-    .footer .upper-section p {}
+    .footer .upper-section p {
+        color: white;
+    }
 
     .footer .description {
         text-align: center;
