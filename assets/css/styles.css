@@ -74,9 +74,16 @@ nav ul li a {
     padding: 10px;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     background-color: lightgreen;
     border-bottom: 2px solid #1A1A1A;
+}
+
+nav .cta.active {
+    background-color: green;
+    color: white;
+    border-bottom: none;
 }
 
 /* === Buttons === */
@@ -539,15 +546,6 @@ footer .small-text p {
     font-size: 14px;
 }
 
-.contact-info .icons ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact-info .icons ul li a {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
 
 /* === Responsive === */
 @media (max-width: 1200px) {
@@ -566,7 +564,7 @@ footer .small-text p {
 
     .hero-container {
         height: 90vh;
-        margin-top: 20px;
+        margin-top: 80px;
     }
 
     .hero-container h1 {
@@ -593,16 +591,9 @@ footer .small-text p {
         font-size: 15px;
     }
 
-    footer .links a {
-        font-size: 15px;
-    }
 }
 
 @media (max-width: 830px) {
-    .nav-container nav {
-        height: 80px;
-    }
-
     .values-grid {
         flex-direction: column;
     }
@@ -611,8 +602,10 @@ footer .small-text p {
         padding: 40px 30px;
     }
 
-    .services-overview {
-        margin: 40px 20px;
+    .mission,
+    .services-overview,
+    .story {
+        margin: 40px 30px;
     }
 
     .cta-section {
@@ -631,28 +624,80 @@ footer .small-text p {
         font-size: 16px;
     }
 
-    footer .upper-section {
+    /* Services page */
+    #services {
+        height: auto;
+        padding: 40px 30px;
+        margin-top: 80px;
+    }
+
+    .offers ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .more-details {
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .more-details .planting,
+    .more-details .pruning,
+    .more-details .lectures,
+    .more-details .care,
+    .more-details .selection,
+    .more-details .harvesting {
+        flex-direction: column;
+        padding: 0;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .more-details img {
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+    }
+
+    /* About page */
+    .team-section {
+        padding: 0 20px;
+    }
+
+    .team-section .group {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Contact page */
+    .contact-section {
+        padding: 0 20px;
+    }
+
+    .contact-section .group {
+        flex-direction: column;
+    }
+
+    /* Footer */
+    footer .upper-section {
+        flex-direction: column;
+        align-items: stretch;
         width: 100%;
         margin: 0;
+        padding: 30px 20px;
+        gap: 20px;
     }
 
-<<<<<<< HEAD
-    footer .description {
-=======
-    .footer .upper-section p {
-        color: white;
-    }
-
-    .footer .description {
->>>>>>> 50c9e6a53952970915f6fdedaf116899dcc0da86
+    footer .upper-section .description {
+        width: auto;
         text-align: center;
     }
 
     footer h4 {
         text-align: center;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -665,16 +710,68 @@ footer .small-text p {
     }
 
     .nav-container ul {
-        gap: 12px;
+        gap: 8px;
         padding: 0;
     }
 
-    nav .cta {
-        margin-right: 20px;
-        padding: 10px;
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 4px;
     }
 
-    .mission {
+    nav .cta {
+        margin-right: 12px;
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    h2,
+    h3 {
+        letter-spacing: -1px;
+    }
+
+    .hero-container {
+        margin-top: 80px;
+    }
+
+    .hero-container h1 {
+        font-size: 28px;
+    }
+
+    .hero-container p {
+        font-size: 15px;
+        padding: 0 16px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .mission,
+    .services-overview,
+    .story {
         margin: 20px;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    blockquote {
+        padding: 16px 20px;
+        font-size: 17px;
+    }
+
+    .about .intro-text-container {
+        height: auto;
+        padding: 30px 20px;
+        margin-top: 60px;
+        margin-bottom: 40px;
     }
 }
