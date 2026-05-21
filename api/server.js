@@ -4,29 +4,14 @@ require("dotenv").config({ path: path.join(__dirname, ".env") });
 const express = require("express");
 const nodemailer = require("nodemailer");
 const rateLimit = require("express-rate-limit");
-const cookieParser = require("cookie-parser");
 
 const app = express();
 
 // Trust the first proxy (Plesk reverse proxy)
 app.set("trust proxy", 1);
 
-// Parse cookies for language preference
-app.use(cookieParser());
-
-// Redirect Dutch-speaking visitors to /nl/ on the homepage
-app.get("/", (req, res, next) => {
-  if (req.cookies.lang_pref) return next();
-  const acceptLang = req.headers["accept-language"] || "";
-  if (/\bnl\b/i.test(acceptLang)) {
-    res.cookie("lang_pref", "nl", { maxAge: 365 * 24 * 60 * 60 * 1000, sameSite: "lax" });
-    return res.redirect(302, "/nl/");
-  }
-  next();
-});
-
 // Serve the Hugo-built static site from the public directory
-app.use(express.static(path.join(__dirname, "..", "website", "public")));
+app.use(express.static(path.join(__dirname, "..", "public")));
 
 // Parse JSON and URL-encoded request bodies, capped at 10kb to prevent abuse
 app.use(express.json({ limit: "10kb" }));
@@ -116,4 +101,4 @@ app.post("/api/send", limiter, async (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Raaijmakers.it API listening on port ${port}`));
+app.listen(port, () => console.log(`Treeminded.nl API listening on port ${port}`));
