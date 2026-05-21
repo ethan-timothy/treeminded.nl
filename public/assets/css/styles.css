@@ -487,6 +487,33 @@ blockquote {
     font-size: 20px;
 }
 
+.contact-section .group form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#form-status {
+    margin-top: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px 14px;
+    display: none;
+}
+
+#form-status.form-success {
+    display: block;
+    background-color: #d4edda;
+    color: #1a5c2a;
+    border: 1px solid #a3d9b1;
+}
+
+#form-status.form-error {
+    display: block;
+    background-color: #fde8e8;
+    color: #7a1c1c;
+    border: 1px solid #f5b8b8;
+}
+
 .bullet-list {
     list-style: disc;
     padding-left: 1.5em;

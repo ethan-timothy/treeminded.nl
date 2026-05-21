@@ -1,0 +1,15 @@
+{
+  "name": "raaijmakers-it-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.1",
+    "dotenv": "^17.2.4",
+    "express-rate-limit": "^8.2.1",
+    "cookie-parser": "^1.4.7"
+  }
+}
