@@ -39,9 +39,74 @@ h1 {
     text-align: center;
     color: #1A1A1A;
 }
+/* === New Navigation with Gallery & Humberg === */
+input {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    background-color: rgba(122, 162, 112, 0.55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0px 25px 0px 25px;
+}
+
+nav img {
+    width: 60px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+nav .left-side a {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+nav .right-side a {
+    color: black;
+    margin-left: 40px;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+nav .right-side a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+}
+
+nav .right-side a:hover::after {
+  width: 100%;
+}
+
+body > input {
+    visibility: hidden;
+    position: absolute;
+}
+
+label {
+    display: none;
+}
 
 /* === Navigation === */
-.nav-container nav {
+/* .nav-container nav {
     display: flex;
     background-color: #F4F6F3;
     color: #1A1A1A;
@@ -84,7 +149,7 @@ nav .cta.active {
     background-color: green;
     color: white;
     border-bottom: none;
-}
+} */
 
 /* === Buttons === */
 .cta {
@@ -431,6 +496,29 @@ blockquote {
     margin: 0;
 }
 
+/* Gallery */
+.gallery-heading {
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.gallery-heading h2 {
+    font-size: 36px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    margin: 0 50px;
+}
+
+.gallery-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 /* === Contact Page === */
 .contact-section {
     padding: 0 50px;
@@ -621,6 +709,98 @@ footer .small-text p {
 }
 
 @media (max-width: 830px) {
+    nav .right-side {
+        display: none;
+    }
+
+    nav .right-side a {
+    color: black;
+    margin-left: 40px;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0;
+    }
+
+    nav .right-side .cta {
+        background-color: rgb(122, 162, 112);
+        border: none;
+    }
+
+    nav .right-side a:hover {
+        color: white;
+        font-weight: 600;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    label.hamburger span {
+        display: block;
+        background: white;
+        height: 3px;
+        width: 28px;
+        margin: 7px;
+        transition: all 0.4s ease;
+    }
+
+    label.cross span:nth-child(1){
+        display: block;
+        background: white;
+        height: 4px;
+        width: 30px;
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+        margin-top: 0px;
+    }
+
+    label.cross span:nth-child(2){
+        display: block;
+        background: white;
+        height: 4px;
+        width: 30px;
+        transform-origin: 0 100%;
+        transform: rotate(-45deg);
+        margin-top: 17px;
+    }
+
+    input#open:checked ~ nav label.hamburger {
+        display: none;
+    }
+
+    input#close:checked ~ nav label.cross {
+        display: none;
+    }
+
+    input#open:checked ~ nav .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        right: 0;
+        background: rgb(122, 162, 112);
+        flex-wrap: wrap;
+        width: 100%;
+        height: 400px;
+    }
+
+    nav .right-side a {
+        width: 100%;
+        padding: 20px;
+    }
+
+    nav .right-side a:hover {
+        outline: 1px solid forestgreen;
+    }
+}
+
     .values-grid {
         flex-direction: column;
     }
@@ -725,13 +905,7 @@ footer .small-text p {
         text-align: center;
     }
 
-}
-
 @media (max-width: 600px) {
-    .nav-container .hide {
-        display: none;
-    }
-
     .nav-container .logo {
         margin-left: 20px;
     }

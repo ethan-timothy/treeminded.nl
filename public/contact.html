@@ -18,24 +18,44 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      async
+      defer
+    ></script>
     <title>Treeminded | Contact</title>
   </head>
 
   <body>
-    <!-- navigation bar -->
     <div class="nav-container">
-      <nav>
-        <a href="index.html"
-          ><img class="logo" src="assets/images/tree00.png" alt="Logo"
-        /></a>
+      <input type="radio" name="radio" id="open" />
+      <input type="radio" name="radio" id="close" checked />
 
-        <ul>
-          <li><a href="index.html">Thuis</a></li>
-          <li><a href="services.html">Diensten</a></li>
-          <li><a href="about.html">Over ons</a></li>
-          <li><a class="cta active" href="contact.html">Contact</a></li>
-        </ul>
+      <nav>
+        <div class="left-side">
+          <a href="index.html"
+            ><img src="assets/images/tree00.png" alt="Treeminded Logo"
+          /></a>
+        </div>
+
+        <div class="right-side">
+          <a href="index.html">Thuis</a>
+          <a href="services.html">Diensten</a>
+          <a href="about.html">Over ons</a>
+          <a href="gallery.html">Gallery</a>
+          <a class="cta" href="contact.html">Contact</a>
+        </div>
+
+        <label class="hamburger" for="open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <label class="cross" for="close">
+          <span></span>
+          <span></span>
+        </label>
       </nav>
     </div>
 
@@ -48,8 +68,8 @@
         <div class="text">
           <p>
             Heeft u een vraag over uw bomen, wilt u een offerte aanvragen of
-            gewoon even overleggen? Treeminded staat voor u klaar. Wij
-            reageren zo snel mogelijk — meestal binnen één werkdag.
+            gewoon even overleggen? Treeminded staat voor u klaar. Wij reageren
+            zo snel mogelijk — meestal binnen één werkdag.
           </p>
           <br />
 
@@ -78,8 +98,10 @@
           </p>
           <br />
 
-          <p><strong>Offerte aanvragen?</strong><br />
-          Beschrijf in uw bericht zo goed mogelijk:</p>
+          <p>
+            <strong>Offerte aanvragen?</strong><br />
+            Beschrijf in uw bericht zo goed mogelijk:
+          </p>
           <ul class="bullet-list">
             <li>Welke dienst u nodig heeft</li>
             <li>Om hoeveel bomen het gaat</li>
@@ -101,7 +123,11 @@
           <label for="message">Uw bericht</label>
           <textarea id="message" name="message" rows="10" required></textarea>
 
-          <div class="cf-turnstile" data-sitekey="0x4AAAAAADTR2MIvX_oKwypT" data-callback="onTurnstileSuccess"></div>
+          <div
+            class="cf-turnstile"
+            data-sitekey="0x4AAAAAADTR2MIvX_oKwypT"
+            data-callback="onTurnstileSuccess"
+          ></div>
 
           <button type="submit">Verstuur &rarr;</button>
           <p id="form-status"></p>
@@ -121,7 +147,7 @@
           </p>
         </div>
 
-<div class="contact-info">
+        <div class="contact-info">
           <h4>Contact</h4>
 
           <address>Treeminded</address>

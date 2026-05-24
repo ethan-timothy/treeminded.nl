@@ -24,17 +24,34 @@
   <body>
     <!-- navigation bar -->
     <div class="nav-container">
-      <nav>
-        <a href="index.html"
-          ><img class="logo" src="assets/images/tree00.png" alt="Logo"
-        /></a>
+      <input type="radio" name="radio" id="open" />
+      <input type="radio" name="radio" id="close" checked />
 
-        <ul>
-          <li><a href="index.html">Thuis</a></li>
-          <li><a href="services.html">Diensten</a></li>
-          <li><a class="hide active" href="about.html">Over ons</a></li>
-          <li><a class="cta" href="contact.html">Contact</a></li>
-        </ul>
+      <nav>
+        <div class="left-side">
+          <a href="index.html"
+            ><img src="assets/images/tree00.png" alt="Treeminded Logo"
+          /></a>
+        </div>
+
+        <div class="right-side">
+          <a href="index.html">Thuis</a>
+          <a href="services.html">Diensten</a>
+          <a href="about.html">Over ons</a>
+          <a href="gallery.html">Gallery</a>
+          <a class="cta" href="contact.html">Contact</a>
+        </div>
+
+        <label class="hamburger" for="open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <label class="cross" for="close">
+          <span></span>
+          <span></span>
+        </label>
       </nav>
     </div>
 
@@ -58,14 +75,17 @@
         </p>
         <br />
         <p>
-          De naam <em>Treeminded</em> zegt het al: alles draait om bewust
-          omgaan met bomen. Niet als obstakels die gemanaged moeten worden,
-          maar als levende wezens die communiceren, reageren en een eigen
-          intelligentie hebben.
+          De naam <em>Treeminded</em> zegt het al: alles draait om bewust omgaan
+          met bomen. Niet als obstakels die gemanaged moeten worden, maar als
+          levende wezens die communiceren, reageren en een eigen intelligentie
+          hebben.
         </p>
         <br />
         <blockquote>
-          <em>"Trees are the most intelligent creatures on earth, because they don't speak."</em><br />
+          <em
+            >"Trees are the most intelligent creatures on earth, because they
+            don't speak."</em
+          ><br />
           — Alex Shigo
         </blockquote>
       </div>
@@ -113,8 +133,8 @@
             Erik leerde het vak bij <strong>Pius Floris Boomverzorging</strong>,
             een van de meest gerespecteerde namen in de Nederlandse
             boomverzorgingswereld. Na jarenlange ervaring in de tuinierwereld
-            besloot hij zijn eigen weg te gaan en Treeminded op te richten —
-            een bedrijf dat zijn naam waardig is.
+            besloot hij zijn eigen weg te gaan en Treeminded op te richten — een
+            bedrijf dat zijn naam waardig is.
           </p>
           <br />
           <p>
@@ -166,7 +186,7 @@
           </p>
         </div>
 
-<div class="contact-info">
+        <div class="contact-info">
           <h4>Contact</h4>
 
           <address>Treeminded</address>

@@ -24,17 +24,34 @@
   <body>
     <!-- navigation bar -->
     <div class="nav-container">
-      <nav>
-        <a href="index.html"
-          ><img class="logo" src="assets/images/tree00.png" alt="Logo"
-        /></a>
+      <input type="radio" name="radio" id="open" />
+      <input type="radio" name="radio" id="close" checked />
 
-        <ul>
-          <li><a class="hide active" href="index.html">Thuis</a></li>
-          <li><a href="services.html">Diensten</a></li>
-          <li><a href="about.html">Over ons</a></li>
-          <li><a class="cta" href="contact.html">Contact</a></li>
-        </ul>
+      <nav>
+        <div class="left-side">
+          <a href="index.html"
+            ><img src="assets/images/tree00.png" alt="Treeminded Logo"
+          /></a>
+        </div>
+
+        <div class="right-side">
+          <a href="index.html">Thuis</a>
+          <a href="services.html">Diensten</a>
+          <a href="about.html">Over ons</a>
+          <a href="gallery.html">Gallery</a>
+          <a class="cta" href="contact.html">Contact</a>
+        </div>
+
+        <label class="hamburger" for="open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <label class="cross" for="close">
+          <span></span>
+          <span></span>
+        </label>
       </nav>
     </div>
 
@@ -42,8 +59,8 @@
     <div class="hero-container">
       <h1>Vakkundige boomverzorging met hart voor natuur</h1>
       <p>
-        Treeminded staat voor duurzame, deskundige zorg voor uw bomen —
-        in Ammerzoden en ver daarbuiten.
+        Treeminded staat voor duurzame, deskundige zorg voor uw bomen — in
+        Ammerzoden en ver daarbuiten.
       </p>
       <div class="cta-container">
         <a class="cta-2" href="about.html">Over ons</a>
@@ -69,10 +86,15 @@
       </p>
       <br />
       <blockquote>
-        <em>"Trees are the most intelligent creatures on earth, because they don't speak."</em><br />
+        <em
+          >"Trees are the most intelligent creatures on earth, because they
+          don't speak."</em
+        ><br />
         — Alex Shigo
       </blockquote>
-      <div class="learn-more"><a href="about.html">Leer meer over ons &gt;&gt;</a></div>
+      <div class="learn-more">
+        <a href="about.html">Leer meer over ons &gt;&gt;</a>
+      </div>
     </section>
 
     <!-- kernwaarden -->
@@ -126,9 +148,10 @@
     <section class="mission">
       <h2>Werkgebied</h2>
       <p>
-        Treeminded is actief in <strong>Noord-Brabant, Utrecht, Gelderland,
-        Zuid-Holland en Limburg</strong>. Twijfelt u of wij in uw regio
-        werken? Neem gerust contact op.
+        Treeminded is actief in
+        <strong
+          >Noord-Brabant, Utrecht, Gelderland, Zuid-Holland en Limburg</strong
+        >. Twijfelt u of wij in uw regio werken? Neem gerust contact op.
       </p>
     </section>
 
@@ -136,8 +159,8 @@
     <section class="cta-section">
       <h2>Klaar om uw bomen de zorg te geven die ze verdienen?</h2>
       <p>
-        Of u nu een vraag heeft over een zieke boom, een snoeibeurt wilt
-        plannen of advies zoekt voor uw tuin — wij staan voor u klaar.
+        Of u nu een vraag heeft over een zieke boom, een snoeibeurt wilt plannen
+        of advies zoekt voor uw tuin — wij staan voor u klaar.
       </p>
       <div class="cta-container">
         <a class="cta-2" href="contact.html">Neem contact op</a>
