@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
     <title>Treeminded | Home</title>
   </head>
 
@@ -60,27 +61,32 @@
       <h2>Moments of Impact</h2>
       <p>Ontdek hoe waardevol ons werk tot uiting komt in onze foto's.</p>
     </div>
-    <div class="gallery-images">
-      <img src="assets/images/Image-3.jpg" alt="" />
-      <img src="assets/images/image-5.jpg" alt="" />
-      <img src="assets/images/Image-6.jpg" alt="" />
-      <img src="assets/images/Image-7.jpg" alt="" />
-      <img src="assets/images/Image-18.jpg" alt="" />
-      <img src="assets/images/Image-10.jpg" alt="" />
-      <img src="assets/images/Image-11.jpg" alt="" />
-      <img src="assets/images/Image-12.jpg" alt="" />
-      <img src="assets/images/Image-14.jpg" alt="" />
-      <img src="assets/images/Image-16.jpg" alt="" />
-      <img src="assets/images/Image-17.jpg" alt="" />
-      <img src="assets/images/Image-9 (1).jpg" alt="" />
-      <img src="assets/images/Image-2.jpg" alt="" />
-      <img src="assets/images/Image-4.jpg" alt="" />
-      <img src="assets/images/Image-9 (1).jpg" alt="" />
-      <img src="assets/images/Image-18.jpg" alt="" />
-      <img src="assets/images/Image-13.jpg" alt="" />
-      <img src="assets/images/Image-15.jpg" alt="" />
-      <img src="assets/images/Image-1.jpg" alt="" />
-      <img src="assets/images/Image-20.jpeg" alt="" />
+    <div class="slideshow">
+      <div class="slideshow-frame">
+        <img src="assets/images/image-1.jpg" class="slide" alt="" />
+        <img src="assets/images/image-2.jpg" class="slide" alt="" />
+        <img src="assets/images/image-3.jpg" class="slide" alt="" />
+        <img src="assets/images/image-4.jpg" class="slide" alt="" />
+        <img src="assets/images/image-5.jpg" class="slide" alt="" />
+        <img src="assets/images/image-6.jpg" class="slide" alt="" />
+        <img src="assets/images/image-7.jpg" class="slide" alt="" />
+        <img src="assets/images/image-9 (1).jpg" class="slide" alt="" />
+        <img src="assets/images/image-10.jpg" class="slide" alt="" />
+        <img src="assets/images/image-11.jpg" class="slide" alt="" />
+        <img src="assets/images/image-12.jpg" class="slide" alt="" />
+        <img src="assets/images/image-13.jpg" class="slide" alt="" />
+        <img src="assets/images/image-14.jpg" class="slide" alt="" />
+        <img src="assets/images/image-15.jpg" class="slide" alt="" />
+        <img src="assets/images/image-16.jpg" class="slide" alt="" />
+        <img src="assets/images/image-17.jpg" class="slide" alt="" />
+        <img src="assets/images/image-18.jpg" class="slide" alt="" />
+        <img src="assets/images/image-20.jpeg" class="slide" alt="" />
+        <button class="slide-btn prev" aria-label="Vorige">&#8249;</button>
+        <button class="slide-btn next" aria-label="Volgende">&#8250;</button>
+        <div class="slide-counter"><span class="current">1</span> / <span class="total"></span></div>
+      </div>
+      <div class="slide-dots"></div>
     </div>
+    <script src="assets/js/gallery.js"></script>
   </body>
 </html>
