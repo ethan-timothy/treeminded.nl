@@ -15,7 +15,7 @@ Jan de Witplein 1
 5324 CT Ammerzoden
 
 **Telefoon:** 06 - 47 232 632
-**E-mail:** treeminded11@gmail.com
+**E-mail:** info@treeminded.nl
 
 **KVK:** 84216832
 **BTW-ID:** NL3938301B37
