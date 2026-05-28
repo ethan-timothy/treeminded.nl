@@ -1,0 +1,16 @@
+{{- $title   := .Get "title" -}}
+{{- $id      := .Get "id" -}}
+{{- $image   := .Get "image" -}}
+{{- $alt     := .Get "alt" | default "" -}}
+{{- $reverse := .Get "reverse" -}}
+{{- $center  := .Get "center" -}}
+<h3{{ if $center }} class="service-heading--center"{{ end }}>{{ $title | safeHTML }}</h3>
+<div class="service-block" id="{{ $id }}">
+  {{- if and $image $reverse }}
+  <img src="{{ $image }}" alt="{{ $alt }}" loading="lazy" />
+  {{- end }}
+  <div>{{ .Inner | markdownify }}</div>
+  {{- if and $image (not $reverse) }}
+  <img src="{{ $image }}" alt="{{ $alt }}" loading="lazy" />
+  {{- end }}
+</div>

@@ -33,6 +33,11 @@ a {
     font-weight: 500;
 }
 
+.container a:not(.cta):not(.cta-2) {
+    color: #2a7a2a;
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 68px;
     text-align: center;
@@ -41,9 +46,11 @@ h1 {
 
 /* === Container === */
 .container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 40px;
+    background-color: #fff;
+    overflow: hidden;
 }
 
 /* === Navigation === */
@@ -211,7 +218,7 @@ h1 {
 
 /* === Hero === */
 .hero-container {
-    background-image: url("../images/realbg.jpg");
+    background-image: url("/assets/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
@@ -410,28 +417,11 @@ blockquote {
     font-size: 36px;
 }
 
-.pruning-heading,
-.care-heading,
-.harvesting-heading {
+.service-heading--center {
     text-align: center;
 }
 
-.planting,
-.pruning,
-.lectures,
-.care,
-.selection,
-.harvesting {
-    margin-bottom: 30px;
-    padding: 5px;
-}
-
-.more-details .planting,
-.more-details .pruning,
-.more-details .lectures,
-.more-details .care,
-.more-details .selection,
-.more-details .harvesting {
+.service-block {
     display: flex;
     padding: 0 50px;
     align-items: center;
@@ -535,7 +525,7 @@ blockquote {
 
 .contact-section .group form input,
 .contact-section .group form textarea {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     border: 2px solid green;
     background-color: #e0facf;
     padding: 10px;
@@ -546,7 +536,7 @@ blockquote {
 
 .contact-section .group form button {
     font-size: 18px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     border: none;
     color: rgb(26, 32, 26);
     background-color: #68a371;
@@ -799,12 +789,7 @@ footer {
         margin-bottom: 60px;
     }
 
-    .more-details .planting,
-    .more-details .pruning,
-    .more-details .lectures,
-    .more-details .care,
-    .more-details .selection,
-    .more-details .harvesting {
+    .service-block {
         flex-direction: column;
         padding: 0;
         gap: 16px;
