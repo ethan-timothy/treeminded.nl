@@ -4,6 +4,7 @@
   const counterCurrent = document.querySelector('.slide-counter .current');
   const counterTotal = document.querySelector('.slide-counter .total');
   const frame = document.querySelector('.slideshow-frame');
+  const caption = document.querySelector('.slide-caption');
   const total = slides.length;
   let current = 0;
   let timer;
@@ -24,6 +25,7 @@
     slides[current].classList.add('active');
     dotsContainer.children[current].classList.add('active');
     counterCurrent.textContent = current + 1;
+    caption.textContent = slides[current].alt;
   }
 
   function next() { goTo(current + 1); resetTimer(); }
@@ -58,6 +60,9 @@
   frame.addEventListener('mouseenter', () => clearInterval(timer));
   frame.addEventListener('mouseleave', startTimer);
 
-  goTo(0);
+  // First slide is already active in HTML — initialize state without triggering animation
+  dotsContainer.children[0].classList.add('active');
+  counterCurrent.textContent = 1;
+  caption.textContent = slides[0].alt;
   startTimer();
 })();
