@@ -1,0 +1,48 @@
+{{ define "head_extra" }}
+<link rel="stylesheet" href="/assets/css/gallery.css" />
+{{ end }}
+
+{{ define "main" }}
+  <div class="gallery-heading">
+    <h2>Moments of Impact</h2>
+    <p>Ontdek hoe waardevol ons werk tot uiting komt in onze foto's.</p>
+  </div>
+  <div class="slideshow">
+    <div class="slideshow-frame">
+      <img src="/assets/images/image-1.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-2.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-3.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-4.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-5.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-6.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-7.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-9 (1).jpg" class="slide" alt="" />
+      <img src="/assets/images/image-10.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-11.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-12.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-13.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-14.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-15.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-16.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-17.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-18.jpg" class="slide" alt="" />
+      <img src="/assets/images/image-20.jpeg" class="slide" alt="" />
+      <button class="slide-btn prev" aria-label="Vorige">&#8249;</button>
+      <button class="slide-btn next" aria-label="Volgende">&#8250;</button>
+      <div class="slide-counter"><span class="current">1</span> / <span class="total"></span></div>
+    </div>
+    <div class="slide-dots"></div>
+  </div>
+{{ end }}
+
+{{ define "scripts" }}
+{{- with resources.Get "js/gallery.js" }}
+  {{- if hugo.IsDevelopment }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{ end }}

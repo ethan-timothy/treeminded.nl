@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  {{ partial "head.html" . }}
+  {{ block "head_extra" . }}{{ end }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <div class="container">
+    {{ block "main" . }}{{ end }}
+  </div>
+  {{ partial "footer.html" . }}
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

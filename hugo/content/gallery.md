@@ -1,0 +1,4 @@
+---
+title: "Gallerij"
+layout: "gallery"
+---

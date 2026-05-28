@@ -1,0 +1,4 @@
+baseURL = 'https://treeminded.nl/'
+locale = 'nl'
+title = 'Treeminded'
+theme = 'treeminded'

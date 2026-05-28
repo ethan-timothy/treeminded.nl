@@ -1,0 +1,86 @@
+{{ define "head_extra" }}
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{{ end }}
+
+{{ define "main" }}
+  <section class="contact-section">
+    <h2>Contact</h2>
+
+    <div class="group">
+      <div class="text">
+        <p>
+          Heeft u een vraag over uw bomen, wilt u een offerte aanvragen of
+          gewoon even overleggen? Treeminded staat voor u klaar. Wij reageren
+          zo snel mogelijk — meestal binnen één werkdag.
+        </p>
+        <br />
+
+        <p><strong>Treeminded</strong></p>
+        <address>Jan de Witplein 1</address>
+        <address>5324 CT Ammerzoden</address>
+        <br />
+
+        <p>
+          <strong>Telefoon:</strong>
+          <a href="tel:0647232632">06 - 47 232 632</a>
+        </p>
+        <p>
+          <strong>E-mail:</strong>
+          <a href="mailto:info@treeminded.nl">info@treeminded.nl</a>
+        </p>
+        <br />
+
+        <p><strong>KVK:</strong> 84216832</p>
+        <p><strong>BTW-ID:</strong> NL3938301B37</p>
+        <br />
+
+        <p>
+          <strong>Werkgebied:</strong> Noord-Brabant, Utrecht, Gelderland,
+          Zuid-Holland en Limburg.
+        </p>
+        <br />
+
+        <p>
+          <strong>Offerte aanvragen?</strong><br />
+          Beschrijf in uw bericht zo goed mogelijk:
+        </p>
+        <ul class="bullet-list">
+          <li>Welke dienst u nodig heeft</li>
+          <li>Om hoeveel bomen het gaat</li>
+          <li>Uw locatie</li>
+        </ul>
+      </div>
+
+      <form id="contact-form">
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" autocomplete="name" required />
+
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="email" autocomplete="email" required />
+
+        <label for="phone">Telefoonnummer</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" />
+
+        <label for="message">Uw bericht</label>
+        <textarea id="message" name="message" rows="10" required></textarea>
+
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAADTR2MIvX_oKwypT" data-callback="onTurnstileSuccess"></div>
+
+        <button type="submit">Verstuur &rarr;</button>
+        <p id="form-status"></p>
+      </form>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "scripts" }}
+{{- with resources.Get "js/contact.js" }}
+  {{- if hugo.IsDevelopment }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{ end }}

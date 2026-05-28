@@ -1,0 +1,42 @@
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">
+      <img src="/assets/images/tree00.png" alt="" aria-hidden="true" />
+      <span>Treeminded</span>
+    </a>
+
+    <div class="nav-links" id="nav-menu">
+      <a href="/"{{ if eq .RelPermalink "/" }} aria-current="page"{{ end }}>Thuis</a>
+      <a href="/services/"{{ if eq .RelPermalink "/services/" }} aria-current="page"{{ end }}>Diensten</a>
+      <a href="/about/"{{ if eq .RelPermalink "/about/" }} aria-current="page"{{ end }}>Over ons</a>
+      <a href="/gallery/"{{ if eq .RelPermalink "/gallery/" }} aria-current="page"{{ end }}>Gallerij</a>
+      <a class="nav-cta" href="/contact/"{{ if eq .RelPermalink "/contact/" }} aria-current="page"{{ end }}>Contact</a>
+    </div>
+
+    <button class="hamburger-btn" aria-label="Menu openen" aria-expanded="false" aria-controls="nav-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+<script>
+(function () {
+  var btn = document.querySelector('.hamburger-btn');
+  var menu = document.getElementById('nav-menu');
+  if (!btn || !menu) return;
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    btn.setAttribute('aria-label', !open ? 'Menu sluiten' : 'Menu openen');
+    menu.classList.toggle('open', !open);
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.site-nav')) {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Menu openen');
+      menu.classList.remove('open');
+    }
+  });
+}());
+</script>

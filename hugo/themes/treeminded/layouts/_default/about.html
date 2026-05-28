@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <section class="about">
+    <div class="intro-text-container">
+      <h2>{{ .Title }}</h2>
+      <p>Wie is Treeminded, wat drijft ons en wie staat er voor u klaar?</p>
+    </div>
+
+    <div class="story">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="group">
+      <div class="personal-details">
+        <img id="founder-pic"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSasmMdPasYhlVsLTnNzhSvm21Ji2Rk3HREUQ&s"
+          alt="Erik van Uijtert" loading="lazy" />
+        <p>Erik van Uijtert</p>
+        <p>Oprichter Treeminded</p>
+      </div>
+    </div>
+  </section>
+{{ end }}
