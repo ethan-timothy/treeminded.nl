@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = form.email.value.trim();
     const phone = form.phone.value.trim();
     const message = form.message.value.trim();
-    const turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value;
+    const turnstileToken = form.querySelector(
+      '[name="cf-turnstile-response"]',
+    )?.value;
 
     btn.disabled = true;
     btn.textContent = "Verzenden...";

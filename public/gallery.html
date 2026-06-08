@@ -1,87 +1,127 @@
 <!doctype html>
 <html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/tree00.png" type="img/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=optional"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+    <title>Treeminded | Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="assets/images/tree00.png" type="img/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/gallery.css" />
-  <title>Treeminded | Home</title>
-</head>
+  <body>
+    <!-- navigation bar -->
+    <div class="nav-container">
+      <input type="radio" name="radio" id="open" />
+      <input type="radio" name="radio" id="close" checked />
 
-<body>
-  <!-- navigation bar -->
-  <div class="nav-container">
-    <input type="radio" name="radio" id="open" />
-    <input type="radio" name="radio" id="close" checked />
+      <nav>
+        <div class="left-side">
+          <a href="index.html"
+            ><img src="assets/images/tree00.png" alt="Treeminded Logo"
+          /></a>
+        </div>
 
-    <nav>
-      <div class="left-side">
-        <a href="index.html"><img src="assets/images/tree00.png" alt="Treeminded Logo" /></a>
-      </div>
+        <div class="right-side">
+          <a href="index.html">Thuis</a>
+          <a href="services.html">Diensten</a>
+          <a href="about.html">Over ons</a>
+          <a href="gallery.html">Gallerij</a>
+          <a class="cta" href="contact.html">Contact</a>
+        </div>
 
-      <div class="right-side">
-        <a href="index.html">Thuis</a>
-        <a href="services.html">Diensten</a>
-        <a href="about.html">Over ons</a>
-        <a href="gallery.html">Gallerij</a>
-        <a class="cta" href="contact.html">Contact</a>
-      </div>
+        <label class="hamburger" for="open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-      <label class="hamburger" for="open">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <label class="cross" for="close">
-        <span></span>
-        <span></span>
-      </label>
-    </nav>
-  </div>
-
-  <!-- Image Gallery -->
-  <div class="gallery-heading">
-    <h2>Moments of Impact</h2>
-    <p>Ontdek hoe waardevol ons werk tot uiting komt in onze foto's.</p>
-  </div>
-  <div class="slideshow">
-    <div class="slideshow-frame">
-      <img src="assets/images/image-1.jpg" class="slide" alt="" />
-      <img src="assets/images/image-2.jpg" class="slide" alt="" />
-      <img src="assets/images/image-3.jpg" class="slide" alt="" />
-      <img src="assets/images/image-4.jpg" class="slide" alt="" />
-      <img src="assets/images/image-5.jpg" class="slide" alt="" />
-      <img src="assets/images/image-6.jpg" class="slide" alt="" />
-      <img src="assets/images/image-7.jpg" class="slide" alt="" />
-      <img src="assets/images/image-9.jpg" class="slide" alt="" />
-      <img src="assets/images/image-10.jpg" class="slide" alt="" />
-      <img src="assets/images/image-11.jpg" class="slide" alt="" />
-      <img src="assets/images/image-12.jpg" class="slide" alt="" />
-      <img src="assets/images/image-13.jpg" class="slide" alt="" />
-      <img src="assets/images/image-14.jpg" class="slide" alt="" />
-      <img src="assets/images/image-15.jpg" class="slide" alt="" />
-      <img src="assets/images/image-16.jpg" class="slide" alt="" />
-      <img src="assets/images/image-17.jpg" class="slide" alt="" />
-      <img src="assets/images/image-18.jpg" class="slide" alt="" />
-      <img src="assets/images/image-20.jpeg" class="slide" alt="" />
-      <button class="slide-btn prev" aria-label="Vorige">&#8249;</button>
-      <button class="slide-btn next" aria-label="Volgende">&#8250;</button>
-      <div class="slide-counter"><span class="current">1</span> / <span class="total"></span></div>
+        <label class="cross" for="close">
+          <span></span>
+          <span></span>
+        </label>
+      </nav>
     </div>
-    <div class="slide-dots"></div>
-  </div>
-  <script src="assets/js/gallery.js"></script>
-</body>
 
+    <!-- Image Gallery -->
+    <section class="about">
+      <div class="intro-text-container">
+        <h2>Gallerij</h2>
+        <p>Ontdek hoe waardevol ons werk tot uiting komt in onze foto's.</p>
+      </div>
+    </section>
+    <div class="slideshow">
+      <div class="slideshow-frame">
+        <img src="assets/images/image-1.jpg" class="slide" alt="" />
+        <img src="assets/images/image-3.jpg" class="slide" alt="" />
+        <img src="assets/images/image-4.jpg" class="slide" alt="" />
+        <img src="assets/images/image-5.jpg" class="slide" alt="" />
+        <img src="assets/images/image-6.jpg" class="slide" alt="" />
+        <img src="assets/images/image-7.jpg" class="slide" alt="" />
+        <img src="assets/images/image-9.jpg" class="slide" alt="" />
+        <img src="assets/images/image-10.jpg" class="slide" alt="" />
+        <img src="assets/images/image-11.jpg" class="slide" alt="" />
+        <img src="assets/images/image-12.jpg" class="slide" alt="" />
+        <img src="assets/images/image-13.jpg" class="slide" alt="" />
+        <img src="assets/images/image-14.jpg" class="slide" alt="" />
+        <img src="assets/images/image-15.jpg" class="slide" alt="" />
+        <img src="assets/images/image-16.jpg" class="slide" alt="" />
+        <img src="assets/images/image-17.jpg" class="slide" alt="" />
+        <img src="assets/images/image-18.jpg" class="slide" alt="" />
+        <img src="assets/images/image-20.jpeg" class="slide" alt="" />
+        <button class="slide-btn prev" aria-label="Vorige">&#8249;</button>
+        <button class="slide-btn next" aria-label="Volgende">&#8250;</button>
+        <div class="slide-counter">
+          <span class="current">1</span> / <span class="total"></span>
+        </div>
+      </div>
+      <div class="slide-dots"></div>
+    </div>
+    <script src="assets/js/gallery.js"></script>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="upper-section">
+        <div class="description">
+          <h4>Treeminded</h4>
+          <p>
+            Vakkundige boomverzorging met hart voor natuur. Met ruim 25 jaar
+            ervaring zorgt Erik van Uijtert persoonlijk voor uw bomen —
+            duurzaam, deskundig en met respect voor mens en natuur.
+          </p>
+        </div>
+
+        <div class="contact-info">
+          <h4>Contact</h4>
+
+          <address>Treeminded</address>
+          <address>Jan de Witplein 1</address>
+          <address>5324 CT Ammerzoden</address>
+          <address><a href="tel:0647232632">06 - 47 232 632</a></address>
+        </div>
+      </div>
+
+      <hr />
+      <div class="small-text">
+        <p>
+          &copy;2026 | Treeminded. Alle rechten voorbehouden.
+          <br />
+          Gemaakt met ❤️ voor een groenere toekomst.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
