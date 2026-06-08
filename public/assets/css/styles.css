@@ -168,7 +168,7 @@ nav .cta.active {
 .cta-2 {
   padding: 10px;
   color: white;
-  border: 2px solid rgb(154, 138, 37);
+  border: 2px solid #6abf6a;
   border-radius: 8px;
   background-color: green;
 }
@@ -339,100 +339,82 @@ blockquote {
 }
 
 /* === Services Page === */
-#services {
-  padding: 0 100px;
-  margin-top: 80px;
-  margin-bottom: 50px;
-  background-color: green;
-  color: white;
-  height: 450px;
-}
-
-#services .text {
-  background-color: green;
-  align-content: center;
-}
-
-#services .text h2 {
-  font-size: 50px;
-  text-align: center;
-  margin: 20px;
-  text-shadow: 2px 2px 2px #1a1a1a;
-}
-
-#services .text p {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 30px;
-}
-
-#services li {
-  border: 2px solid white;
-  border-radius: 8px;
-  padding: 5px 10px;
-  background-color: #c2a878;
-}
-
-#services li a {
-  font-size: 18px;
-  color: #1a1a1a;
+.offers {
+  padding: 24px 40px;
+  background-color: #f4f6f3;
 }
 
 .offers ul {
   display: flex;
-  text-align: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-#services li a:hover {
-  color: #04618c;
-  font-style: italic;
+.offers li {
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 5px 14px;
+  background-color: #c2a878;
+}
+
+.offers li a {
+  font-size: 16px;
+  color: white;
+}
+
+.offers li a:hover {
+  color: #1a1a1a;
 }
 
 .more-details {
-  padding: 0 50px;
-  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
 }
 
-.more-details h3 {
-  font-weight: 600;
-  font-size: 36px;
-}
-
-.pruning-heading,
-.care-heading,
-.harvesting-heading {
-  text-align: center;
-}
-
-.planting,
-.pruning,
-.lectures,
-.care,
-.selection,
-.harvesting {
-  margin-bottom: 30px;
-  padding: 5px;
-}
-
-.more-details .planting,
-.more-details .pruning,
-.more-details .lectures,
-.more-details .care,
-.more-details .selection,
-.more-details .harvesting {
-  display: flex;
-  padding: 0 50px;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 50px;
+.service-left,
+.service-right {
+  background-color: #ffffff;
+  border: 2px solid green;
+  border-radius: 8px;
+  padding: 16px 20px;
   scroll-margin-top: 140px;
 }
 
-.more-details img {
-  border-radius: 8px;
-  aspect-ratio: 1/1;
-  width: 200px;
+.service-left h3,
+.service-right h3 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-left h3 {
+  text-align: left;
+}
+
+.service-right h3 {
+  text-align: right;
+}
+
+.service-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-body p {
+  font-size: 16px;
+}
+
+.service-body img {
+  border-radius: 6px;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
 
 /* === About Page === */
@@ -607,26 +589,35 @@ footer a:hover {
   border-radius: 5px;
 }
 
-footer .upper-section {
+footer .footer-columns {
   display: flex;
   justify-content: space-between;
-  margin: 50px;
+  gap: 40px;
+  padding: 50px 60px;
 }
 
-footer .upper-section .description {
-  width: 400px;
+footer .footer-brand {
+  flex: 2;
 }
 
-footer .upper-section h4 {
-  font-size: 22px;
+footer .footer-contact {
+  flex: 1;
+}
+
+footer h4 {
+  font-size: 20px;
   font-weight: 600;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px #1a1a1a;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a8d5a2;
 }
 
-footer .upper-section p {
-  font-size: 18px;
+footer p,
+footer address {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.8;
 }
 
 footer .small-text {
@@ -709,7 +700,7 @@ footer .small-text p {
     font-weight: 600;
   }
 
-  label {
+  .nav-container label {
     display: block;
     cursor: pointer;
   }
@@ -823,22 +814,18 @@ footer .small-text p {
     margin-bottom: 60px;
   }
 
-  .more-details .planting,
-  .more-details .pruning,
-  .more-details .lectures,
-  .more-details .care,
-  .more-details .selection,
-  .more-details .harvesting {
-    flex-direction: column;
-    padding: 0;
-    gap: 16px;
-    align-items: flex-start;
+  .more-details {
+    grid-template-columns: 1fr;
   }
 
-  .more-details img {
-    width: 100%;
-    max-width: 400px;
-    align-self: center;
+  .service-left,
+  .service-right {
+    padding: 16px;
+  }
+
+  .service-left h3,
+  .service-right h3 {
+    text-align: center;
   }
 
   /* About page */
@@ -861,21 +848,18 @@ footer .small-text p {
   }
 
   /* Footer */
-  footer .upper-section {
+  footer .footer-columns {
     flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    margin: 0;
     padding: 30px 20px;
-    gap: 20px;
-  }
-
-  footer .upper-section .description {
-    width: auto;
-    text-align: center;
+    gap: 24px;
   }
 
   footer h4 {
+    text-align: center;
+  }
+
+  footer p,
+  footer address {
     text-align: center;
   }
 }
